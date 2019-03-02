@@ -3,66 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <title>Hexal</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-    <header>
-           <!--  <h1>Hexal</h1> -->
-     <nav class="navigation">
-         <ul class="menu">
-         <ul class="menu">
-             <li class="item"><a id="test1" href="#hex-link">PORTFOLIO</a></li>
-             <li class="author"><a href="#inf">ABOUT</a></li>
-             <li class="logo"><img class="image-logo"  src="logo.png" alt="logo"></li>
-             <li class="blog"><a href="">BLOG</a></li>
-             <li class="join-with"><a href="#get-in">GET IN TOUCH</a></li>
-         </ul> 
-     </nav>
-     </header> 
-     <main>
-         <section class="hexagon-container"><a name="hex-link"></a>
-                <div class="hexagon"><div class="hex-layer-1"><div class="hex-layer-2"></div></div></div>
-             <div class="hexagon1"><div class="hex-layer-1-1"><div class="hex-layer-2-1"></div></div></div>
-             <div class="hexagon2"><div class="hex-layer-1-2"><div class="hex-layer-2-2"></div></div></div>
-             <div class="hexagon3"><div class="hex-layer-1-3"><div class="hex-layer-2-3"></div></div></div>
-             <div class="hexagon4"><div class="hex-layer-1-4"><div class="hex-layer-2-4"></div></div></div>
-             <div class="hexagon5"><div class="hex-layer-1-5"><div class="hex-layer-2-5"></div></div></div>
-             <div class="hexagon6"><div class="hex-layer-1-6"><div class="hex-layer-2-6"></div></div></div>
-             <div class="hexagon7"><div class="hex-layer-1-7"><div class="hex-layer-2-7"></div></div></div>
-             <div class="hexagon8"><div class="hex-layer-1-8"><div class="hex-layer-2-8"></div></div></div>
-             <div class="hexagon9"><div class="hex-layer-1-9"><div class="hex-layer-2-9"></div></div></div>
-             <div class="hexagon10"><div class="hex-layer-1-10"><div class="hex-layer-2-10"></div></div></div>
-             <div class="hexagon11"><div class="hex-layer-1-11"><div class="hex-layer-2-11"></div></div></div>
-             <div class="hexagon12"><div class="hex-layer-1-12"><div class="hex-layer-2-12"></div></div></div>
-
-             <article class="info"><a name="inf"></a>
-            <img src="Image.png" alt="person">
-                   <h3>Smith Anderson</h3>
+<header class="header">
+    <div class="wrapper">
+        <ul class="menu">
+            <li class="menu-item"><a class="item-link active" href="#portfolio">PORTFOLIO</a></li>
+            <li class="menu-item"><a class="item-link" href="#about">ABOUT</a></li>
+            <li class="menu-item menu-logo"><a href="/" class="item-link link-logo">
+                <div class="hexagon">
+                    <div class="hex-layer-1">
+                        <div class="hex-layer-2 hex-logo"></div>
+                    </div>
+                </div>
+            </a></li>
+            <li class="menu-item"><a class="item-link" href="#">BLOG</a></li>
+            <li class="menu-item"><a class="item-link" href="#get-in-touch">GET IN TOUCH</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <section class="hexagon-container" id="portfolio">
+        <div class="wrapper">
+            <div>
+                <div class="hexagon">
+                    <div class="hex-layer-1">
+                        <div class="hex-layer-2 hex-bg0"></div>
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="hex-layer-1">
+                        <div class="hex-layer-2 hex-bg1"></div>
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="hex-layer-1">
+                        <div class="hex-layer-2 hex-bg2"></div>
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="hex-layer-1">
+                        <div class="hex-layer-2 hex-bg3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hexagon hex-second-line">
+                <div class="hex-layer-1">
+                    <div class="hex-layer-2 hex-bg4"></div>
+                </div>
+            </div>
+            <div class="hexagon hex-second-line">
+                <div class="hex-layer-1">
+                    <div class="hex-layer-2 hex-bg5"></div>
+                </div>
+            </div>
+            <div class="hexagon hex-second-line">
+                <div class="hex-layer-1">
+                    <div class="hex-layer-2 hex-bg6"></div>
+                </div>
+            </div>
+            <div class="hexagon hex-second-line">
+                <div class="hex-layer-1">
+                    <div class="hex-layer-2 hex-bg7"></div>
+                </div>
+            </div>
+            <div class="hexagon hex-second-line">
+                <div class="hex-layer-1">
+                    <div class="hex-layer-2 hex-bg8"></div>
+                </div>
+            </div>
+            <div class="hexagon hex-third-line">
+                <div class="hex-layer-1">
+                    <div class="hex-layer-2 hex-bg9"></div>
+                </div>
+            </div>
+            <div class="hexagon hex-third-line">
+                <div class="hex-layer-1">
+                    <div class="hex-layer-2 hex-bg10"></div>
+                </div>
+            </div>
+            <div class="hexagon hex-third-line">
+                <div class="hex-layer-1">
+                    <div class="hex-layer-2 hex-bg11"></div>
+                </div>
+            </div>
+            <div class="hexagon hex-third-line">
+                <div class="hex-layer-1">
+                    <div class="hex-layer-2 hex-bg12"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article class="info" id="about">
+        <div class="wrapper">
+            <div class="about">
+                <div class="hexagon">
+                    <div class="hex-layer-1">
+                        <div class="hex-layer-2 hex-author"></div>
+                    </div>
+                </div>
+                <div class="information">
+                    <h3>Smith Anderson</h3>
                     <p class="subtitle"></p>
-                    <p></p>
-             </article>
-         </section>
-     </main>
-    <footer>
-        <fieldset >
-                <form action="#" class="in-touch-form">
-                    <legend>Get in Touch</legend>
-                    <a name="get-in"></a>
-                    <p class="get-p">In order to get in touch use the contact form below:</p>
-                    <input class="input-text" type="text" placeholder="Name" required>
-                    <input type="email" placeholder="email" required>
-                    <input type="subject" placeholder="Subject" >
-                    <textarea name="textar" cols="30" rows="10" placeholder="Write your messege here..."></textarea>
-                    <p>Quisque Hendrerit: purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
-                    <p>  Elm St. 14/05 Lost City
-                        + 3528 331 86 35
-                        info@hexalcorp.com</p>
-        </fieldset>
-        <button class="button" type="submit">send</button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis
+                        tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam
+                        congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi
+                        egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna
+                        pretium augue, eget consectetur sem dui non urna</p>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <form action="#" class="in-touch-form" id="get-in-touch">
+            <fieldset class="fieldset">
+                <legend>Get in Touch</legend>
+                <p class="get-p">In order to get in touch use the contact form below:</p>
+                <input class="input-text" type="text" placeholder="Name" required>
+                <input type="email" placeholder="email" required>
+                <input placeholder="Subject" type="text">
+                <textarea cols="30" rows="10" placeholder="Write your messege here..."></textarea>
+                <p>Quisque Hendrerit: purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin
+                    sit
+                    amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
+                <p> Elm St. 14/05 Lost City
+                    + 3528 331 86 35
+                    info@hexalcorp.com</p>
+            </fieldset>
+            <button class="button" type="submit">send</button>
         </form>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>

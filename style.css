@@ -1,519 +1,229 @@
-/* #323232 цвет верхушка навигации 
-цвет Portfolio #2f9882 nav
-цвет article #2eb398 о иллюстраторе 
-цвет footer #323232
-цвет #e0e0e0 get in touch
-*/
-
-*
-{
+body {
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
 }
-body {
-    width: 1020px;
-    height: 1734px;
-    background-color: #ffffff;
-    font-family: 'Lato', sans-serif;
-}
 
-/* НАВИГАЦИЯ*/
-
-.navigation {
-    width: 1020px;
-    height: 63px;
-    background-color: #323232;
- }
-
-.navigation ul li {
-    float: left;
+.wrapper {
+    max-width: 980px;
     margin: 0 auto;
 }
 
-    .navigation ul li a {
-        color: #fff;
-        padding: 100px;
-        font-family: 'Lato', sans-serif;
-        text-decoration: none;
-        width: 114px;
-        height: 8px;
-        font-size: 10px;
-        font-weight: 700;
-        line-height: 6.32px;
-        text-transform: uppercase;
-    }
-    /*
-    .image-logo {
-        width: 64px;
-        height: 55px;
-    }
-    */
+.header {
+    background: #323232;
+}
 
-#test1 {
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    margin: 0 13px;
+}
+
+.menu-item.menu-logo {
+    position: relative;
+    width: 140px;
+}
+
+.item-link {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 6px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.item-link:hover, .item-link:focus {
     color: #2eb398;
 }
-  .logo {
-      margin: 0 auto;
-      display: block;
-      
- }
+
+.item-link.active {
+    color: #2eb398;
+}
+
+.item-link.link-logo {
+    position: absolute;
+    top: -200px;
+    left: -128px;
+    width: 0;
+}
+
+.image-logo {
+    width: 64px;
+    height: 55px;
+}
+
+.logo {
+    margin: 0 auto;
+    display: block;
+}
 
 .hexagon {
     width: 182px;
-    height:209px;
-    margin:5px;
+    height: 209px;
+    margin: 5px;
     transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
+    overflow: hidden;
     visibility: hidden;
     display: inline-block;
     position: relative;
     top: 53px;
-    left: 97px;
-
-
+    left: 100px;
 }
+
 .hex-layer-1 {
     width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
+    height: 100%;
+    transform: rotate(-60deg);
     overflow: hidden;
     visibility: hidden;
 }
 
 .hex-layer-2 {
     width: 100%;
-    height:100%;
-    background: #2258 ;
+    height: 100%;
     transform: rotate(-60deg);
     overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+    visibility: visible;
+    background: #323232 no-repeat 50%;
+}
+
+.hexagon.hex-second-line {
+    top: 3px;
+    left: 3px;
+}
+
+.hexagon.hex-third-line {
+    top: -48px;
+    left: 100px;
+}
+
+.hex-bg0 {
     background-image: url("1hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
-.hexagon1 {
-    width: 182px;
-    height:209px;
-    margin:5px;
-    transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
-    visibility: hidden;
-    display: inline-block;
-    position: relative;
-    top: 53px;
-    left: 97px;
-
-}
-.hex-layer-1-1 {
-    width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.hex-layer-2-1 {
-    width: 100%;
-    height:100%;
-    background: #2258 ;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+.hex-bg1 {
     background-image: url("2hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
-.hexagon2 {
-    width: 182px;
-    height:209px;
-    margin:5px;
-    transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
-    visibility: hidden;
-    display: inline-block;
-    position: relative;
-    top: 53px;
-    left: 97px;
-}
-.hex-layer-1-2 {
-    width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.hex-layer-2-2 {
-    width: 100%;
-    height:100%;
-    background: #2258 ;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+.hex-bg2 {
     background-image: url("3hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
-.hexagon3 {
-    width: 182px;
-    height:209px;
-    margin:5px;
-    transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
-    visibility: hidden;
-    display: inline-block;
-
-
-}
-.hex-layer-1-3 {
-    width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.hex-layer-2-3{
-    width: 100%;
-    height:100%;
-    background: #2258 ;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+.hex-bg3 {
     background-image: url("4hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
-.hexagon4 {
-    width: 182px;
-    height:209px;
-    margin:5px;
-    transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
-    visibility: hidden;
-    display: inline-block;
-
-}
-.hex-layer-1-4 {
-    width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.hex-layer-2-4 {
-    width: 100%;
-    height:100%;
-    background: #2258 ;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+.hex-bg4 {
     background-image: url("5hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
-.hexagon5 {
-    width: 182px;
-    height:209px;
-    margin:5px;
-    transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
-    visibility: hidden;
-    display: inline-block;
-
-}
-.hex-layer-1-5 {
-    width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.hex-layer-2-5 {
-    width: 100%;
-    height:100%;
-    background: #2258 ;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+.hex-bg5 {
     background-image: url("6hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
-.hexagon6 {
-    width: 182px;
-    height:209px;
-    margin:5px;
-    transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
-    visibility: hidden;
-    display: inline-block;
-
-
-}
-.hex-layer-1-6 {
-    width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.hex-layer-2-6 {
-    width: 100%;
-    height:100%;
-    background: #2258 ;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+.hex-bg6 {
     background-image: url("7hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
-.hexagon7 {
-    width: 182px;
-    height:209px;
-    margin:5px;
-    transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
-    visibility: hidden;
-    display: inline-block;
-
-}
-.hex-layer-1-7 {
-    width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.hex-layer-2-7 {
-    width: 100%;
-    height:100%;
-    background: #2258 ;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+.hex-bg7 {
     background-image: url("8hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
-.hexagon8 {
-    width: 182px;
-    height:209px;
-    margin:5px;
-    transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
-    visibility: hidden;
-    display: inline-block;
-
-}
-.hex-layer-1-8 {
-    width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.hex-layer-2-8 {
-    width: 100%;
-    height:100%;
-    background: #2258 ;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+.hex-bg8 {
     background-image: url("9hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
-.hexagon9 {
-    width: 182px;
-    height:209px;
-    margin:5px;
-    transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
-    visibility: hidden;
-    display: inline-block;
-}
-.hex-layer-1-9 {
-    width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.hex-layer-2-9 {
-    width: 100%;
-    height:100%;
-    background: #2258 ;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+.hex-bg9 {
     background-image: url("10hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
-
-.hexagon10 {
-    width: 182px;
-    height:209px;
-    margin:5px;
-    transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
-    visibility: hidden;
-    display: inline-block;
-
-}
-.hex-layer-1-10 {
-    width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.hex-layer-2-10 {
-    width: 100%;
-    height:100%;
-    background: #2258 ;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+.hex-bg10 {
     background-image: url("11hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
-.hexagon11 {
-    width: 182px;
-    height:209px;
-    margin:5px;
-    transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
-    visibility: hidden;
-    display: inline-block;
-
-}
-.hex-layer-1-11 {
-    width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.hex-layer-2-11 {
-    width: 100%;
-    height:100%;
-    background: #2258 ;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+.hex-bg11 {
     background-image: url("12hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
-.hexagon12 {
-    width: 182px;
-    height:209px;
-    margin:5px;
-    transform: rotate(120deg);
-    overflow: hidden; /*скрывает все, что за пределам блока) */
-    visibility: hidden;
-    display: inline-block;
-
-}
-.hex-layer-1-12 {
-    width: 100%;
-    height:100%;
-    transform: rotate(-60deg); /*смещается относительно родителя (в нашем случае hexagon) */
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.hex-layer-2-12 {
-    width: 100%;
-    height:100%;
-    background: #2258 ;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: visible; /* делаем видимым нашего потомка */
+.hex-bg12 {
     background-image: url("13hex.png");
-    background-repeat: no-repeat; /* не повторяем */
-    background-position: 50%;
-
 }
 
+.hex-logo {
+    background-image: url("Logo.png");
+    background-position: 50% 76%;
+}
 
+.hex-author {
+    background-image: url("Image.png");
+}
 
-/* АРТИКЛ */
 .info {
-    width: 1020px;
-    height: 341px;
     background-color: #2eb398;
 }
 
-/* Форма */
-.in-touch-form {
-    width: 1020px;
-    height: 564px;
+.about {
+    border-left: 1px solid #219d84;
+    border-right: 1px solid #219d84;
+    display: flex;
+}
+
+.about .hexagon {
+    flex-shrink: 0;
+}
+
+.footer {
     background-color: #323232;
+}
+
+.fieldset {
+    border: none;
+}
+
+.in-touch-form {
     position: relative;
 }
+
 legend {
     color: #e0e0e0;
     font-family: 'Maven Pro', sans-serif;
     font-size: 30px;
     font-weight: 400;
 }
+
 .get-p {
     width: 421px;
     height: 17px;
     color: #bebebe;
-    font-family: "Maven Pro Regular";
+    font-family: 'Maven Pro', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 21.56px;
+    line-height: 21px;
 }
 
-input[type="text"], input[type="email"]{
+input[type="text"], input[type="email"] {
     width: 580px;
     height: 38px;
     background-color: #454545;
     font-size: 12px;
     font-weight: 400;
-    line-height: 21.56px;
+    line-height: 21px;
     border: none;
     resize: none;
 }
+
 input[type="subject"] {
     width: 580px;
     height: 38px;
@@ -521,19 +231,19 @@ input[type="subject"] {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 400;
-    line-height: 21.56px;
+    line-height: 21px;
     border: none;
     resize: none;
 }
+
 textarea[name="textar"] {
     width: 580px;
     height: 150px;
     background-color: #454545;
-   /* margin: 118px 120px 118px 296px; */
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 400;
-    line-height: 21.56px;
+    line-height: 21px;
     border: none;
     resize: none;
 }
