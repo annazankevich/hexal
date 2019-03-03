@@ -110,64 +110,64 @@ body {
 }
 
 .hex-bg0 {
-    background-image: url("1hex.png");
+    background-image: url("assets/images/1hex.png");
 }
 
 .hex-bg1 {
-    background-image: url("2hex.png");
+    background-image: url("assets/images/2hex.png");
 }
 
 .hex-bg2 {
-    background-image: url("3hex.png");
+    background-image: url("assets/images/3hex.png");
 }
 
 .hex-bg3 {
-    background-image: url("4hex.png");
+    background-image: url("assets/images/4hex.png");
 }
 
 .hex-bg4 {
-    background-image: url("5hex.png");
+    background-image: url("assets/images/5hex.png");
 }
 
 .hex-bg5 {
-    background-image: url("6hex.png");
+    background-image: url("assets/images/6hex.png");
 }
 
 .hex-bg6 {
-    background-image: url("7hex.png");
+    background-image: url("assets/images/7hex.png");
 }
 
 .hex-bg7 {
-    background-image: url("8hex.png");
+    background-image: url("assets/images/8hex.png");
 }
 
 .hex-bg8 {
-    background-image: url("9hex.png");
+    background-image: url("assets/images/9hex.png");
 }
 
 .hex-bg9 {
-    background-image: url("10hex.png");
+    background-image: url("assets/images/10hex.png");
 }
 
 .hex-bg10 {
-    background-image: url("11hex.png");
+    background-image: url("assets/images/11hex.png");
 }
 
 .hex-bg11 {
-    background-image: url("12hex.png");
+    background-image: url("assets/images/12hex.png");
 }
 
 .hex-bg12 {
-    background-image: url("13hex.png");
+    background-image: url("assets/images/13hex.png");
 }
 
 .hex-logo {
-    background-image: url("Logo.png");
+    background-image: url("assets/images/Logo.png");
     background-position: 50% 76%;
 }
 
 .hex-author {
-    background-image: url("Image.png");
+    background-image: url("assets/images/Image.png");
 }
 
 .info {
@@ -191,7 +191,7 @@ body {
 
 .information {
     position: relative;
-    top: -32px;
+    top: -28px;
     left: 98px;
 }
 
@@ -220,6 +220,7 @@ body {
     font-size: 12px;
     font-weight: 400;
     line-height: 2;
+    text-align: justify;
 }
 
 .social {
@@ -237,63 +238,108 @@ body {
     background-color: #323232;
 }
 
-.fieldset {
-    border: none;
-}
-
-.fieldset {
-    position: relative;
-    top: 59px;
-    left: 86px;
-    height: 565px;
-}
-
 .in-touch-form {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.legend {
-    color: #e0e0e0;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-}
-.contact-p {
-    color: #bebebe;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
+    height: 565px;
 }
 
-.input-text, .textarea{
+.fieldset {
+    border: none;
+    position: relative;
+    left: 92px;
+}
+
+.input-text, .textarea {
     background-color: #454545;
     color: #bebebe;
     font-size: 12px;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
-    width: 580px;
+    width: 565px;
     height: 38px;
     border: none;
     margin: 7px;
-    padding: 0 0 0 15px ;
+    padding: 0 0 0 15px;
 }
 
 .textarea {
-    width: 580px;
+    width: 565px;
     height: 150px;
     padding: 15px 0 0 15px;
     resize: none;
 }
+
+.legend {
+    color: #e0e0e0;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 6px;
+}
+
+.contact-p {
+    color: #bebebe;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 7px 0 0;
+}
+
+.button {
+    background-color: #2eb398;
+    border: none;
+    color: #d7fcf5;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    position: relative;
+    left: -24px;
+    top: 209px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.contact {
+    position: relative;
+    width: 180px;
+}
+
 .contact-description {
     font-family: 'Lato', sans-serif;
     color: #bebebe;
     font-weight: 400;
+    width: 180px;
+    height: 117px;
+    font-size: 12px;
+    position: relative;
+    top: -94px;
+    text-align: justify;
+    line-height: 21px;
 }
+
 .contact-description:before {
     content: "Quisque Hendrerit: ";
     color: #e0e0e0;
     font-weight: 900;
+    font-size: 12px;
+}
+
+.address {
+    position: relative;
+    top: 27px;
+    left: -180px;
+}
+
+.address-link {
+    color: #bebebe;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 21px;
+    text-decoration: none;
 }
