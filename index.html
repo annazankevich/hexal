@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hexal</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -131,20 +131,24 @@
     <div class="wrapper">
         <form action="#" class="in-touch-form" id="get-in-touch">
             <fieldset class="fieldset">
-                <legend>Get in Touch</legend>
-                <p class="get-p">In order to get in touch use the contact form below:</p>
-                <input class="input-text" type="text" placeholder="Name" required>
-                <input type="email" placeholder="email" required>
-                <input placeholder="Subject" type="text">
-                <textarea cols="30" rows="10" placeholder="Write your messege here..."></textarea>
-                <p>Quisque Hendrerit: purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin
-                    sit
-                    amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
-                <p> Elm St. 14/05 Lost City
-                    + 3528 331 86 35
-                    info@hexalcorp.com</p>
+                <legend class="legend">Get in Touch</legend>
+                <p class="contact-p">In order to get in touch use the contact form below:</p>
+                <input class="input-text name" type="text" placeholder="Name (Required)" required>
+                <input class="input-text email" type="email" placeholder="email (Required)" required>
+                <input class="input-text subject" placeholder="Subject" type="text">
+                <textarea class="textarea" cols="30" rows="10" placeholder="Write your messege here..."></textarea>
             </fieldset>
             <button class="button" type="submit">send</button>
+            <div class="contact">
+            <p class="contact-description">purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin
+                sit
+                amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
+            <div class="address">
+                <p>Elm St. 14/05 Lost City</p>
+                <a href="tel:+35283318635" class="call">+ 3528 331 86 35</a>
+                <a href="mailto:info@hexalcorp.com" class="call">info@hexalcorp.com</a>
+            </div>
+            </div>
         </form>
     </div>
 </footer>
