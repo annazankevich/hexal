@@ -320,6 +320,7 @@ body {
     margin-left: auto;
     display: block;
     cursor: pointer;
+    margin-right: 6px;
 }
 
 .contact-information {
@@ -337,8 +338,7 @@ body {
     line-height: 21px;
 }
 
-.contact-description:before {
-    content: "Quisque Hendrerit: ";
+.description-inf{
     color: #e0e0e0;
     font-weight: 900;
     font-size: 12px;
