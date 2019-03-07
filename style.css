@@ -8,7 +8,6 @@ body {
 .wrapper {
     max-width: 980px;
     margin: 0 auto;
-    color: #F0F0F0F0;
 }
 
 .header {
@@ -258,17 +257,17 @@ body {
     background-color: #323232;
 }
 
-.in-touch-form {
+.contact {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 565px;
+    padding: 65px 80px;
+    box-sizing: border-box;
+}
+.in-touch-form {
+    padding: 0 20px 0 0;
 }
 
 .fieldset {
     border: none;
-    position: relative;
-    left: 144px;
 }
 
 .input-text, .textarea {
@@ -277,17 +276,17 @@ body {
     font-size: 12px;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
-    width: 565px;
+    width: 100%;
     height: 38px;
     border: none;
     margin: 7px;
     padding: 0 0 0 15px;
+    box-sizing: border-box;
 }
 
 .textarea {
-    width: 565px;
     height: 150px;
-    padding: 15px 0 0 15px;
+    padding: 15px;
     resize: none;
 }
 
@@ -296,7 +295,6 @@ body {
     font-family: 'Maven Pro', sans-serif;
     font-size: 30px;
     font-weight: 400;
-    line-height: 6px;
 }
 
 .contact-p {
@@ -304,7 +302,7 @@ body {
     font-family: 'Maven Pro', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    margin: 7px 0 0;
+    margin: -7px 0 10px ;
     padding-left: 6px;
 }
 
@@ -317,28 +315,24 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     padding: 10px 30px;
-    position: relative;
-    left: 32px;
-    top: 209px;
     text-align: center;
     text-decoration: none;
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
 }
 
-.contact {
-    position: relative;
+.contact-information {
     width: 180px;
+    flex-shrink: 0;
+    padding-top: 53px;
 }
 
 .contact-description {
     font-family: 'Lato', sans-serif;
     color: #bebebe;
     font-weight: 400;
-    width: 180px;
-    height: 117px;
     font-size: 12px;
-    position: relative;
-    top: -94px;
-    left: 65px;
     text-align: justify;
     line-height: 21px;
 }
@@ -351,14 +345,9 @@ body {
 }
 
 .address {
-    position: relative;
-    top: 37px;
-    left: -167px;
-}
-
-.contact-information {
+    margin: 34px 0 0 -10px;
+    padding: 0;
     list-style: none;
-    width: 180px;
 }
 
 .call, .mailto, .location {
@@ -370,17 +359,18 @@ body {
     text-decoration: none;
 }
 
+
 .location:before {
     content: url("assets/images/location.png");
     padding: 15px;
 }
 
-.phone:before {
+.call:before {
     content: url("assets/images/phone.png");
     padding: 14px;
 }
 
-.email:before {
+.mailto:before {
     content: url("assets/images/mail.png");
     padding: 13px;
 }
